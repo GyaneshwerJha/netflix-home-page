@@ -1,0 +1,153 @@
+.banner {
+    height: 600px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black;
+        opacity: 0.4;
+
+    }
+
+    h1,
+    p {
+        color: rgb(238, 237, 237);
+        font-size: 3rem;
+        width: 40%;
+        z-index: 10;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #e6e1e1;
+
+    }
+
+
+
+    >div {
+        display: flex;
+
+        button {
+            display: flex;
+            padding: 1rem;
+            width: 120px;
+            background-color: white;
+            outline: none;
+            border: none;
+            z-index: 10;
+            margin: 1rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &:nth-child(odd) {
+                cursor: pointer;
+                background-color: white;
+                color: black;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: rgb(172, 171, 171);
+
+                }
+            }
+
+            &:nth-child(even) {
+                cursor: pointer;
+                background-color: rgb(160, 160, 160);
+                color: white;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+
+
+            svg {
+                font-size: 1rem;
+                margin: 0 10px;
+            }
+        }
+    }
+
+}
+
+.row {
+    color: white;
+    padding: 0.5rem;
+    background-color: black;
+
+    >div {
+        display: flex;
+        overflow-x: auto;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-weight: 400;
+    }
+
+}
+
+.card {
+    width: 166px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+}
+
+.genreBox {
+    overflow-x: auto;
+    display: flex;
+    background-color: black;
+
+    >a {
+        color: black;
+        background-color: white;
+        padding: 1rem;
+        margin: 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        min-width: 10rem;
+        justify-content: center;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        &:hover {
+            background-color: antiquewhite;
+        }
+    }
+}
